@@ -127,7 +127,8 @@ a {
       top: 0px;
       right: 0px;
       z-index: 2;
-      max-width: 780px;
+      width: 900px;
+      height: 545px;
       left: -20px; }
       @media (min-width: 768px) {
         .hero .hero-img-wrap img {
