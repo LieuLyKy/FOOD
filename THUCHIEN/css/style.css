@@ -965,3 +965,263 @@ body{
       left: 4%;
   }
 }
+/* 
+css practice */
+
+/* Định dạng chung cho các phần tử */
+.MuiBox-root {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Tiêu đề của bước */
+.MuiTypography-h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Định dạng các hộp đầu vào và nhãn */
+.MuiFormControl-root {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.MuiFormLabel-root {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Lựa chọn giới tính và đơn vị đo */
+.MuiFormControlLabel-labelPlacementEnd {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Định dạng thanh trượt */
+.MuiSlider-root {
+  margin-top: 10px;
+}
+
+/* Nút tạo workout */
+.MuiButton-containedPrimary {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.MuiButton-containedPrimary:hover {
+  background-color: #0056b3;
+}
+
+
+/* Trang tạo lịch tập */
+
+
+.pagination {
+  text-align: center;
+  margin: 20px;
+}
+
+.arrow {
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+#pageNumbers {
+  font-size: 18px;
+}
+/* total_box */
+#step1 {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, #023A4D, #00b8be);
+ 
+}
+
+.MuiContainer_box {
+  width: 552px;
+  margin-left: auto;
+  margin-right: auto;                         
+} 
+
+.form {
+  width: 500px
+  
+}
+
+.information_box {
+  margin-top: 100px;
+}
+
+.Box_title {
+  margin: 24px 0  24px 0;
+}
+
+.title {
+  color: #fff;
+  font-size: 2rem;
+
+}
+
+.mini_title {
+  color: #fff;
+  margin-bottom: 5.6px;
+
+}
+
+
+.first_item {
+  color: #fff;
+ 
+}
+
+.sex_mini_item {
+  width: 49%
+}
+
+.sex_very_mini {
+  font-size: 1rem;
+}
+
+input[type="radio"] {
+      margin-right: 5px; /* Khoảng cách giữa radio button và label */
+     
+  }
+
+  /* Tùy chỉnh kích thước của radio button */
+  input[type="radio"] {
+      width: 20px; /* Độ rộng */
+      height: 20px; /* Độ cao */
+      position: relative;
+      bottom: -5px;
+    
+  }
+
+
+.number_bodyweight {
+width: 100%;
+
+padding: 5px;
+border: 1px solid #ddd;
+border-radius: 5px;
+outline: none;
+}
+
+.number_bodyweight:hover {
+  color: #00b8be;
+  border: 1px solid red;
+}
+
+.myList {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.myList:hover {
+  
+  border: 1px solid red;
+}
+
+.heightall {
+  height: 50px;
+}
+
+
+.Create_mode {
+  width: 100%;
+  background-color: #101f27;
+  color: #fff;
+  border-radius: 15px;
+  height: 50px;
+}
+
+.Create_mode:hover {
+  background-color: #0b161b;
+}
+
+.h4css {
+  font-size: 15px;
+}
+
+.pagination {
+display: flex;
+align-items: center;
+}
+
+.arrow {
+cursor: pointer;
+margin: 0 10px;
+}
+
+.page {
+font-size: 20px;
+}
+
+.MuiTypography-root {
+color: #fff;
+text-align: center;
+}
+
+.progress-bar {
+  margin-bottom: 20px;
+  background-color: #ccc;
+  height: 10px;
+  position: relative;
+  top: 30px;
+}
+
+.progress {
+  height: 100%;
+  width: 0;
+  background-color: #4caf50;
+  transition: width 0.3s ease-in-out;
+}
+
+.navigation-buttons {
+width: 552px;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+
+}
+
+.prev-button {
+width: 100px;
+background-color: #101f27;
+color: #fff;
+border-radius: 15px;
+height: 50px;
+
+}
+
+.prev-button:hover {
+background-color: #0b161b;
+
+}
+
+.next-button {
+width: 100px;
+position: absolute;
+right: 0;
+background-color: #101f27;
+color: #fff;
+border-radius: 15px;
+height: 50px;
+}
+
+.next-button:hover {
+background-color: #0b161b;
+}
+

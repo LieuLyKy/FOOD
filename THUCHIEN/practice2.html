@@ -1,0 +1,885 @@
+<!-- /*
+* Bootstrap 5
+* Template Name: Furni
+* Template Author: Untree.co
+* Template URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="favicon.png">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+		<link href="css/tiny-slider.css" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/themify-icons-font/themify-icons/themify-icons.css">
+	
+    <style>
+      *{
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+      }
+
+      #step2 {
+        width: 100%;
+        height: auto;
+        background: linear-gradient(to bottom, #023A4D, #00b8be);
+      }
+
+      .MuiContainer_box_2 {
+        width: 552px;
+        margin-left: auto;
+        margin-right: auto;                         
+      } 
+
+      /* .MuiTypography-root {
+      color: #fff;
+      text-align: center;
+      } */
+
+      .progress-bar-2 {
+        margin-bottom: 20px;
+        background-color: #ccc;
+        height: 10px;
+        position: relative;
+        top: 30px;
+      }
+
+      .progress-2 {
+        height: 100%;
+        width: 0;
+        background-color: #4caf50;
+        transition: width 0.3s ease-in-out;
+      }
+
+      .form {
+        width: 500px
+        
+      }
+
+      .information_box {
+        margin-top: 100px;
+      }
+
+      .Box_title {
+        margin: 24px 0  24px 0;
+      }
+
+      .title {
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 700;
+
+      }
+
+      .mini_title {
+        color: #fff;
+        margin-bottom: 5.6px;
+        font-weight: 600;
+
+      }
+
+      .text1-box {
+        width: 100%;
+      }
+
+      .h5-box {
+        color: #fff;
+        font-size: 25px;
+        font-weight: 700;
+      }
+
+      .p1-box {
+        color: #fff;
+        font-weight: 600;
+        display: inline-block;
+      }
+
+      .p2-box {
+        color: #fff;
+        font-weight: 600; 
+        float: right;
+      }
+
+      .Big-muibox-mini-root {
+        background-color: #fff;
+        border-radius: 1ch;
+       
+      }
+
+      .Muibox-mini-root {
+       
+        padding: 8px;
+
+        
+      }
+
+      .Muipaper-vrmini-root {
+       
+        
+      }
+
+      
+
+      .paper-1 {
+        width: 10%;
+        display: inline-block;
+      }
+
+      .quantity-1 {
+        width: 40px;
+        line-height: 40px;
+        position: relative;
+        font-size: 20px;
+        background-color: rgb(236, 239, 241);;
+        border-radius: 50%;
+        text-align: center;
+        bottom: 10px;
+      }
+
+      .paper-2 {
+        width: 50%; 
+        display: inline-block;      
+      }
+
+      .span-2 {
+      
+       
+      }
+
+      .a-2 {
+        display: block;
+        color: #000;
+        text-decoration: none;
+        font-size: 20px;
+      }
+
+      .span2-2 {
+      
+      }
+
+      .paper-3 {
+        width: 30%;
+        float: right;
+        line-height: 58px;
+      }
+
+      .Bt-muiicon {
+        width: 50px;
+        border-radius: 100%;      
+        border: none; outline: none; 
+        background-color: #fff;
+      }
+
+      .Bt-muiicon:hover {
+        background-color: #D3D3D3 ;
+        line-height: 48px;
+      }
+
+      .ti-arrow-circle-down {
+        font-size: 30px;
+        position: relative;
+        top: 7px;
+      }
+
+      .ti-exchange-vertical {
+        font-size: 30px;
+        position: relative;
+        top: 7px;
+      }
+
+      .ti-trash {
+        font-size: 30px;
+        position: relative;
+        top: 7px;
+      }
+
+      .div-add {
+        text-align: center;
+        border-top: 15px ;
+        height: 40px;
+        border-top: 2px solid rgb(236, 239, 241);;
+        
+        
+        
+      }
+      .bt-add {
+        border: none; outline: none; 
+        
+      }
+
+      .ti-plus {
+        line-height: 40px;
+        font-size: 20px;
+        width: 150px;
+        background-color: #000;
+        border-radius: 50px;
+        color: #fff;
+      }
+
+      .Callout-bar {
+
+      }
+
+      .Number-of-episodes {
+        background-color: #F9FAFC; 
+  
+
+      }
+
+      .Child-annotation-bar {
+      
+      }
+
+      .tr-annotation {
+        
+      }
+
+      .th-annotation {
+        padding: 6px 35px;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: inherit;
+      }
+
+      .th-DetailsDetails {
+        font-size: 0.875rem;
+        font-weight: 400;
+       line-height: 1.57;
+       font-family: Roboto, Arial, Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+       display: table-cell;
+        vertical-align: inherit;
+        text-align: left;
+        padding: 6px 16px;
+        color: rgb(16, 31, 39);
+        border-bottom: 1px solid rgb(243, 244, 246);
+        text-align-last: center;
+      }
+
+      .navigation-buttons {
+      width: 552px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      padding-bottom: 30px;
+
+    }
+
+      .prev-button {
+      width: 100px;
+      background-color: #101f27;
+      color: #fff;
+      border-radius: 15px;
+      height: 50px;
+
+      }
+
+      .prev-button:hover {
+      background-color: #0b161b;
+
+      }
+
+      .next-button {
+      width: 100px;
+      position: absolute;
+      right: 0;
+      background-color: #101f27;
+      color: #fff;
+      border-radius: 15px;
+      height: 50px;
+      }
+
+      .next-button:hover {
+      background-color: #0b161b;
+      }
+
+      .MuiTypography-root {
+          color: #fff;
+          text-align: center;
+      }
+
+
+    
+
+      
+
+    </style>
+
+      
+</head>
+
+<body>
+  <div id="step2">
+    <div class="MuiContainer_box_2">
+      <div class="progress-bar-2">
+        <div class="progress-2" id="progress"></div>
+      </div>
+      <div class="information_box">
+        <div class="Box_title">
+          <h4 class="title">Your first workout</h4>
+          <p class="mini_title">Create an account to save your workout and generate new ones</p>
+        </div>
+        <form style="width: 552px; display: inline-block;">
+          <div class="Muibox-root">
+            <div class="text1-box">
+              <h5 class="h5-box">
+                Day 1
+              </h5>
+            </div>
+            <div class="text2-box">
+              <p class="p1-box">
+                Pectorals, Triceps, Abs
+              </p>
+
+              <p class="p2-box">
+                Est. 52 mins
+              </p>
+            </div>
+            <div class="Big-muibox-mini-root">
+              <div class="Muibox-mini-root">
+                <div class="MuiPaper-root">
+                  <div class="Muipaper-mini-root">
+                    <div class="Muipaper-vrmini-root">
+  
+                      <div class="paper-1">
+                        <div class="quantity-1">
+                          1
+                        </div>
+                      </div>
+  
+                      <div  class="paper-2">
+                        <span class="span-2">
+                          <a class="a-2" href=""> Incline Cable Pectorals Press</a>
+                        </span>
+  
+                        <span class="span2-2">
+                          2 sets | 10 reps
+                        </span>
+                      </div>
+  
+                      <div class="paper-3">
+                        <div style="display: inline-block;" class="Symbols">
+                          <button class="Bt-muiicon">
+                            <i class="nav-arrow-down ti-arrow-circle-down"></i>
+                          </button>
+  
+                          <button class="Bt-muiicon">
+                            <i class="nav-arrow-down ti-exchange-vertical"></i>
+                          </button>
+  
+                          <button  class="Bt-muiicon">
+                            <i class="nav-arrow-down ti-trash"></i>
+                          </button>
+                        </div>
+                      </div>
+  
+                    </div>
+                  </div>
+
+                  <div class="Callout-bar">
+                    <div class="Number-of-episodes">
+                      <table class="Child-annotation-bar"> 
+                         <thead class="thead-annotation">
+                            <tr class="tr-annotation">
+                              <th class="th-annotation">SET</th>
+                              <th class="th-annotation">REPS</th>
+                              <th class="th-annotation">WEIGHT (LBS)</th>
+                              <th class="th-annotation">REST (SECONDS)</th>
+                            </tr>
+
+                            <tbody class="body-annotation">
+                              <tr class="Training-Session-Details">
+                                <th class="th-DetailsDetails">1</th>
+                                <th class="th-DetailsDetails">9</th>
+                                <th class="th-DetailsDetails">0</th>
+                                <th class="th-DetailsDetails">90</th>
+                              </tr>
+
+                              <tr class="body-annotation">
+                                <th class="th-DetailsDetails">2</th>
+                                <th class="th-DetailsDetails">9</th>
+                                <th class="th-DetailsDetails">0</th>
+                                <th class="th-DetailsDetails">90</th>
+                              </tr>
+
+                              <tr class="body-annotation">
+                                <th class="th-DetailsDetails">3</th>
+                                <th class="th-DetailsDetails">9</th>
+                                <th class="th-DetailsDetails">0</th>
+                                <th class="th-DetailsDetails">90</th>
+                              </tr>
+                            </tbody>
+                         </thead>
+                      </table>
+                    </div>
+                  </div>
+                  
+                 
+                </div>
+              </div>
+  
+              <div class="Muibox-mini-root">
+                <div class="MuiPaper-root">
+                  <div class="Muipaper-mini-root">
+                    <div class="Muipaper-vrmini-root">
+  
+                      <div class="paper-1">
+                        <div class="quantity-1">
+                          2
+                        </div>
+                      </div>
+  
+                      <div  class="paper-2">
+                        <span class="span-2">
+                          <a class="a-2" href=""> Incline Cable Pectorals Press</a>
+                        </span>
+  
+                        <span class="span2-2">
+                          2 sets | 10 reps
+                        </span>
+                      </div>
+  
+                      <div class="paper-3">
+                        <div style="display: inline-block;" class="Symbols">
+                          <button class="Bt-muiicon">
+                            <i class="nav-arrow-down ti-arrow-circle-down"></i>
+                          </button>
+  
+                          <button class="Bt-muiicon">
+                            <i class="nav-arrow-down ti-exchange-vertical"></i>
+                          </button>
+  
+                          <button  class="Bt-muiicon">
+                            <i class="nav-arrow-down ti-trash"></i>
+                          </button>
+                        </div>
+                      </div>
+  
+                    </div>
+                  </div>
+
+                  <div class="Callout-bar">
+                    <div class="Number-of-episodes">
+                      <table class="Child-annotation-bar"> 
+                         <thead class="thead-annotation">
+                            <tr class="tr-annotation">
+                              <th class="th-annotation">SET</th>
+                              <th class="th-annotation">REPS</th>
+                              <th class="th-annotation">WEIGHT (LBS)</th>
+                              <th class="th-annotation">REST (SECONDS)</th>
+                            </tr>
+
+                            <tbody class="body-annotation">
+                              <tr class="Training-Session-Details">
+                                <th class="th-DetailsDetails">1</th>
+                                <th class="th-DetailsDetails">9</th>
+                                <th class="th-DetailsDetails">0</th>
+                                <th class="th-DetailsDetails">90</th>
+                              </tr>
+
+                              <tr class="body-annotation">
+                                <th class="th-DetailsDetails">1</th>
+                                <th class="th-DetailsDetails">9</th>
+                                <th class="th-DetailsDetails">0</th>
+                                <th class="th-DetailsDetails">90</th>
+                              </tr>
+
+                              <tr class="body-annotation">
+                                <th class="th-DetailsDetails">1</th>
+                                <th class="th-DetailsDetails">9</th>
+                                <th class="th-DetailsDetails">0</th>
+                                <th class="th-DetailsDetails">90</th>
+                              </tr>
+                            </tbody>
+                         </thead>
+                      </table>
+                    </div>
+                  </div>
+                  
+                 
+                </div>
+              </div>
+
+              <div class="Muibox-mini-root">
+                <div class="MuiPaper-root">
+                  <div class="Muipaper-mini-root">
+                    <div class="Muipaper-vrmini-root">
+  
+                      <div class="paper-1">
+                        <div class="quantity-1">
+                          3
+                        </div>
+                      </div>
+  
+                      <div  class="paper-2">
+                        <span class="span-2">
+                          <a class="a-2" href=""> Incline Cable Pectorals Press</a>
+                        </span>
+  
+                        <span class="span2-2">
+                          2 sets | 10 reps
+                        </span>
+                      </div>
+  
+                      <div class="paper-3">
+                        <div style="display: inline-block;" class="Symbols">
+                          <button class="Bt-muiicon">
+                            <i class="nav-arrow-down ti-arrow-circle-down"></i>
+                          </button>
+  
+                          <button class="Bt-muiicon">
+                            <i class="nav-arrow-down ti-exchange-vertical"></i>
+                          </button>
+  
+                          <button  class="Bt-muiicon">
+                            <i class="nav-arrow-down ti-trash"></i>
+                          </button>
+                        </div>
+                      </div>
+  
+                    </div>
+                  </div>
+
+                  <!-- <div class="Callout-bar">
+                    <div class="Number-of-episodes">
+                      <table class="Child-annotation-bar"> 
+                         <thead class="thead-annotation">
+                            <tr class="tr-annotation">
+                              <th class="th-annotation">SET</th>
+                              <th class="th-annotation">REPS</th>
+                              <th class="th-annotation">WEIGHT (LBS)</th>
+                              <th class="th-annotation">REST (SECONDS)</th>
+                            </tr>
+
+                            <tbody class="body-annotation">
+                              <tr class="Training-Session-Details">
+                                <th class="th-DetailsDetails">1</th>
+                                <th class="th-DetailsDetails">9</th>
+                                <th class="th-DetailsDetails">0</th>
+                                <th class="th-DetailsDetails">90</th>
+                              </tr>
+
+                              <tr class="body-annotation">
+                                <th class="th-DetailsDetails">1</th>
+                                <th class="th-DetailsDetails">9</th>
+                                <th class="th-DetailsDetails">0</th>
+                                <th class="th-DetailsDetails">90</th>
+                              </tr>
+
+                              <tr class="body-annotation">
+                                <th class="th-DetailsDetails">1</th>
+                                <th class="th-DetailsDetails">9</th>
+                                <th class="th-DetailsDetails">0</th>
+                                <th class="th-DetailsDetails">90</th>
+                              </tr>
+                            </tbody>
+                         </thead>
+                      </table>
+                    </div>
+                  </div> -->
+
+                  
+                  
+                 
+                </div>
+              </div>
+
+              <div class="Muibox-mini-root">
+                <div class="MuiPaper-root">
+                  <div class="Muipaper-mini-root">
+                    <div class="Muipaper-vrmini-root">
+  
+                      <div class="paper-1">
+                        <div class="quantity-1">
+                          4
+                        </div>
+                      </div>
+  
+                      <div  class="paper-2">
+                        <span class="span-2">
+                          <a class="a-2" href=""> Incline Cable Pectorals Press</a>
+                        </span>
+  
+                        <span class="span2-2">
+                          2 sets | 10 reps
+                        </span>
+                      </div>
+  
+                      <div class="paper-3">
+                        <div style="display: inline-block;" class="Symbols">
+                          <button class="Bt-muiicon">
+                            <i class="nav-arrow-down ti-arrow-circle-down"></i>
+                          </button>
+  
+                          <button class="Bt-muiicon">
+                            <i class="nav-arrow-down ti-exchange-vertical"></i>
+                          </button>
+  
+                          <button  class="Bt-muiicon">
+                            <i class="nav-arrow-down ti-trash"></i>
+                          </button>
+                        </div>
+                      </div>
+  
+                    </div>
+                  </div>
+
+                  <!-- <div class="Callout-bar">
+                    <div class="Number-of-episodes">
+                      <table class="Child-annotation-bar"> 
+                         <thead class="thead-annotation">
+                            <tr class="tr-annotation">
+                              <th class="th-annotation">SET</th>
+                              <th class="th-annotation">REPS</th>
+                              <th class="th-annotation">WEIGHT (LBS)</th>
+                              <th class="th-annotation">REST (SECONDS)</th>
+                            </tr>
+
+                            <tbody class="body-annotation">
+                              <tr class="Training-Session-Details">
+                                <th class="th-DetailsDetails">1</th>
+                                <th class="th-DetailsDetails">9</th>
+                                <th class="th-DetailsDetails">0</th>
+                                <th class="th-DetailsDetails">90</th>
+                              </tr>
+
+                              <tr class="body-annotation">
+                                <th class="th-DetailsDetails">1</th>
+                                <th class="th-DetailsDetails">9</th>
+                                <th class="th-DetailsDetails">0</th>
+                                <th class="th-DetailsDetails">90</th>
+                              </tr>
+
+                              <tr class="body-annotation">
+                                <th class="th-DetailsDetails">1</th>
+                                <th class="th-DetailsDetails">9</th>
+                                <th class="th-DetailsDetails">0</th>
+                                <th class="th-DetailsDetails">90</th>
+                              </tr>
+                            </tbody>
+                         </thead>
+                      </table>
+                    </div>
+                  </div> -->
+                  
+                 
+                </div>
+              </div>
+
+              <div class="Muibox-mini-root">
+                <div class="MuiPaper-root">
+                  <div class="Muipaper-mini-root">
+                    <div class="Muipaper-vrmini-root">
+  
+                      <div class="paper-1">
+                        <div class="quantity-1">
+                          5
+                        </div>
+                      </div>
+  
+                      <div  class="paper-2">
+                        <span class="span-2">
+                          <a class="a-2" href=""> Incline Cable Pectorals Press</a>
+                        </span>
+  
+                        <span class="span2-2">
+                          2 sets | 10 reps
+                        </span>
+                      </div>
+  
+                      <div class="paper-3">
+                        <div style="display: inline-block;" class="Symbols">
+                          <button class="Bt-muiicon">
+                            <i class="nav-arrow-down ti-arrow-circle-down"></i>
+                          </button>
+  
+                          <button class="Bt-muiicon">
+                            <i class="nav-arrow-down ti-exchange-vertical"></i>
+                          </button>
+  
+                          <button  class="Bt-muiicon">
+                            <i class="nav-arrow-down ti-trash"></i>
+                          </button>
+                        </div>
+                      </div>
+  
+                    </div>
+                  </div>
+
+                  <!-- <div class="Callout-bar">
+                    <div class="Number-of-episodes">
+                      <table class="Child-annotation-bar"> 
+                         <thead class="thead-annotation">
+                            <tr class="tr-annotation">
+                              <th class="th-annotation">SET</th>
+                              <th class="th-annotation">REPS</th>
+                              <th class="th-annotation">WEIGHT (LBS)</th>
+                              <th class="th-annotation">REST (SECONDS)</th>
+                            </tr>
+
+                            <tbody class="body-annotation">
+                              <tr class="Training-Session-Details">
+                                <th class="th-DetailsDetails">1</th>
+                                <th class="th-DetailsDetails">9</th>
+                                <th class="th-DetailsDetails">0</th>
+                                <th class="th-DetailsDetails">90</th>
+                              </tr>
+
+                              <tr class="body-annotation">
+                                <th class="th-DetailsDetails">1</th>
+                                <th class="th-DetailsDetails">9</th>
+                                <th class="th-DetailsDetails">0</th>
+                                <th class="th-DetailsDetails">90</th>
+                              </tr>
+
+                              <tr class="body-annotation">
+                                <th class="th-DetailsDetails">1</th>
+                                <th class="th-DetailsDetails">9</th>
+                                <th class="th-DetailsDetails">0</th>
+                                <th class="th-DetailsDetails">90</th>
+                              </tr>
+                            </tbody>
+                         </thead>
+                      </table>
+                    </div>
+                  </div> -->
+                  
+                 
+                </div>
+              </div>
+
+              <div class="Muibox-mini-root">
+                <div class="MuiPaper-root">
+                  <div class="Muipaper-mini-root">
+                    <div class="Muipaper-vrmini-root">
+  
+                      <div class="paper-1">
+                        <div class="quantity-1">
+                          6
+                        </div>
+                      </div>
+  
+                      <div  class="paper-2">
+                        <span class="span-2">
+                          <a class="a-2" href=""> Incline Cable Pectorals Press</a>
+                        </span>
+  
+                        <span class="span2-2">
+                          2 sets | 10 reps
+                        </span>
+                      </div>
+  
+                      <div class="paper-3">
+                        <div style="display: inline-block;" class="Symbols">
+                          <button class="Bt-muiicon">
+                            <i class="nav-arrow-down ti-arrow-circle-down"></i>
+                          </button>
+  
+                          <button class="Bt-muiicon">
+                            <i class="nav-arrow-down ti-exchange-vertical"></i>
+                          </button>
+  
+                          <button  class="Bt-muiicon">
+                            <i class="nav-arrow-down ti-trash"></i>
+                          </button>
+                        </div>
+                      </div>
+
+                      <!-- <div class="Callout-bar">
+                        <div class="Number-of-episodes">
+                          <table class="Child-annotation-bar"> 
+                             <thead class="thead-annotation">
+                                <tr class="tr-annotation">
+                                  <th class="th-annotation">SET</th>
+                                  <th class="th-annotation">REPS</th>
+                                  <th class="th-annotation">WEIGHT (LBS)</th>
+                                  <th class="th-annotation">REST (SECONDS)</th>
+                                </tr>
+    
+                                <tbody class="body-annotation">
+                                  <tr class="Training-Session-Details">
+                                    <th class="th-DetailsDetails">1</th>
+                                    <th class="th-DetailsDetails">9</th>
+                                    <th class="th-DetailsDetails">0</th>
+                                    <th class="th-DetailsDetails">90</th>
+                                  </tr>
+    
+                                  <tr class="body-annotation">
+                                    <th class="th-DetailsDetails">1</th>
+                                    <th class="th-DetailsDetails">9</th>
+                                    <th class="th-DetailsDetails">0</th>
+                                    <th class="th-DetailsDetails">90</th>
+                                  </tr>
+    
+                                  <tr class="body-annotation">
+                                    <th class="th-DetailsDetails">1</th>
+                                    <th class="th-DetailsDetails">9</th>
+                                    <th class="th-DetailsDetails">0</th>
+                                    <th class="th-DetailsDetails">90</th>
+                                  </tr>
+                                </tbody>
+                             </thead>
+                          </table>
+                        </div>
+                      </div> -->
+
+                      <div class="div-add">
+                        <div class="div-add-mini">
+                          <button style="background-color: #fff;" class="bt-add">                         
+                            <i class="nav-arrow-down ti-plus"></i>
+                          </button>
+                        </div>
+                      
+                      </div>
+
+  
+                    </div>
+                  </div>
+                  
+                 
+                </div>
+              </div>
+
+            </div>
+
+            
+          </div>
+
+
+        </form>
+       
+        
+
+      </div>
+      
+
+    </div>
+
+    <p style="margin-top: 30px; text-align: center;" class="MuiTypography-root MuiTypography-body2 css-vgjht6">By signing up you agree to our 
+      <a class="MuiTypography-root MuiTypography-body2 MuiLink-root MuiLink-underlineAlways css-1jd56uh" href="/terms">Terms and Conditions</a>
+       and 
+      <a class="MuiTypography-root MuiTypography-body2 MuiLink-root MuiLink-underlineAlways css-1jd56uh" href="/privacy">Privacy Policy</a>
+    </p>
+  
+    <div class="navigation-buttons">
+      <button id="prevButton" class="prev-button" onclick="prevStep(currentStep)">Trở Về</button>
+      <button id="nextButton" class="next-button" onclick="nextStep(currentStep)">Tiếp Theo</button>
+    </div>
+   
+  </div>
+  
+
+</body>
+</html>
