@@ -40,5 +40,5 @@ function updateButtons() {
     }
 }
 
-document.getElementById('step1').style.display = 'block';
-updateButtons();
+
+
